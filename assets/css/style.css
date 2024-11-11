@@ -26,7 +26,7 @@ body {
   display: inline-block;
   min-width: 98px;
   padding: 18px 16px;
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--primary-color);
   color: #fff;
   text-align: center;
@@ -84,6 +84,7 @@ a {
 .navbar .action-btn {
   padding: 13px 16px;
   margin-left: 18px;
+  border-radius: 8px;
 }
 
 .hero {
@@ -155,4 +156,83 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 96px;
+}
+
+/* Guides */
+.guides {
+  margin-top: 200px;
+}
+
+.guides .sub-title {
+  position: relative;
+  color: #000339;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.guides .sub-title::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+}
+
+.guides .desc {
+  width: 459px;
+  max-weight: 100%;
+  margin: 20px auto 0;
+  color: #5a6473;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+}
+
+.list-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.guide-item {
+  text-align: center;
+  margin: 0 70px;
+}
+
+.guide-item .title {
+  margin-top: 26px;
+  color: #3b3c45;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.guide-item .link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0689ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.guide-item .arrow {
+  margin-left: 6px;
+}
+
+.guide-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.guide-cta .btn {
+  min-width: 170px;
 }
